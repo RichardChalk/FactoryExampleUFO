@@ -43,13 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BigUFOEnemyShip.cs" />
-    <Compile Include="EnemyShip.cs" />
-    <Compile Include="EnemyShipFactory.cs" />
+    <Compile Include="Ships\BigRocketEnemyShip.cs" />
+    <Compile Include="Ships\BigUFOEnemyShip.cs" />
+    <Compile Include="Ships\IEnemyShip.cs" />
+    <Compile Include="Factory\EnemyShipFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RocketEnemyShip.cs" />
-    <Compile Include="UFOEnemyShip.cs" />
+    <Compile Include="Ships\RocketEnemyShip.cs" />
+    <Compile Include="Ships\UFOEnemyShip.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

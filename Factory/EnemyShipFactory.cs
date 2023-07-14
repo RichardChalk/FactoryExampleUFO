@@ -1,14 +1,15 @@
-﻿using System;
+﻿using ExampleUFO.Ships;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExampleUFO
+namespace ExampleUFO.Factory
 {
     class EnemyShipFactory
     {
-        public EnemyShip MakeEnemyShip(string shipTypeChosen)
+        public IEnemyShip MakeEnemyShip(string shipTypeChosen)
         {
             if (shipTypeChosen == "U")
                 return new UFOEnemyShip();
@@ -16,6 +17,8 @@ namespace ExampleUFO
                 return new RocketEnemyShip();
             else if (shipTypeChosen == "B")
                 return new BigUFOEnemyShip();
+            else if (shipTypeChosen == "BR")
+                return new BigRocketEnemyShip();
             else
                 return null;
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExampleUFO.Factory;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,8 @@ namespace ExampleUFO
             Console.WriteLine("U: UFO");
             Console.WriteLine("R: Rocket");
             Console.WriteLine("B: Big UFO");
-            var ship = Console.ReadLine();
+            Console.WriteLine("BR: Big Rocket");
+            var ship = Console.ReadLine().ToUpper();
 
             var myEnemyShipFactory =
                new EnemyShipFactory();
@@ -24,6 +26,12 @@ namespace ExampleUFO
             theEnemy.DisplayEnemyShip();
             theEnemy.FollowHeroShip();
             theEnemy.EnemyShipShoots();
+            
+            // Damage ship
+            theEnemy.ShipTakesDamage(10);
+            // Destroy Small ship
+            //theEnemy.ShipTakesDamage(101);
+            
             Console.ReadLine();
         }
     }
