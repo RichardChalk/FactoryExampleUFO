@@ -14,8 +14,6 @@ namespace ExampleUFO
                 return new UFOEnemyShip();
             else if (shipTypeChosen == "R")
                 return new RocketEnemyShip();
-            else if (shipTypeChosen == "B")
-                return new BigUFOEnemyShip();
             else
                 return null;
         }
