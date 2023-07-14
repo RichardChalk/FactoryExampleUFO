@@ -13,7 +13,6 @@ namespace ExampleUFO
             Console.WriteLine("Choose a kind of enemy.");
             Console.WriteLine("U: UFO");
             Console.WriteLine("R: Rocket");
-            Console.WriteLine("B: Big UFO");
             var ship = Console.ReadLine();
 
             var myEnemyShipFactory =
